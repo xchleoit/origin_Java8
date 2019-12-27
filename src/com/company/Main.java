@@ -7,17 +7,26 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-//	    lambdaTest();
-        //重复注解
+
+        String str = ",1,2,3,";
+        System.out.println(str.substring(1,str.length()-1));
+//	    lambdaTest();,
+        //重复注解,
 //        Arrays.asList(Filterable.class.getAnnotationsByType(Filter.class)).
 //                forEach(filter -> System.out.println(filter.value()));
 //        Arrays.asList(Filterables.class.getAnnotationsByType(Filter.class)).
 //                forEach(str -> System.out.println(str.value()));
 //        Filterable.class.getAnnotationsByType(Filtera.class);
 //        Arrays.asList("1","2","3").stream().filter(str->Integer.valueOf(str)!=null).forEach(str-> System.out.println(str));
-        Integer[] in = Arrays.asList("1","2","3").stream().map(s -> {return Integer.valueOf(s);}).toArray(Integer[]::new);
-        String[] in1 = Arrays.asList("1","2","3").stream().toArray(String[]::new);
-        Arrays.asList(in).forEach(integer -> System.out.println(integer+5));
+//        Integer[] in = Arrays.asList("1","2","3").stream().map(s -> {return Integer.valueOf(s);}).toArray(Integer[]::new);
+//        String[] in1 = Arrays.asList("1","2","3").stream().toArray(String[]::new);
+//        Arrays.asList(in).forEach(integer -> System.out.println(integer+5));
+    }
+
+    @Override
+    public String toString() {
+        System.out.println("this is main Class to String method");
+        return "Main{}";
     }
 
     /**
