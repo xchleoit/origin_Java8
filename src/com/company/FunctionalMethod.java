@@ -13,6 +13,15 @@ public class FunctionalMethod {
     public static void main(String[] args) {
 //        test();
         test1();
+
+        System.out.println("E");
+
+        System.out.println("A");
+
+        System.out.println("B");
+
+        System.out.println("C");
+
     }
 
     public static void test(){
