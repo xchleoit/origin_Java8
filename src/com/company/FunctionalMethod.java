@@ -22,6 +22,7 @@ public class FunctionalMethod {
 
         System.out.println("C");
 
+        System.out.println("E");
     }
 
     public static void test(){
